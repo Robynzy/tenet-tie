@@ -30,18 +30,17 @@ const linkAction = () => {
   // When we click on each nav_link, we remove the show-menu class
   navMenu.classList.remove("show-menu");
 };
-navLink.forEach((n) => n.addEventListener("click", linkAction));
+navLink.forEach(n => n.addEventListener('click', linkAction));
 
 /*=============== CHANGE BACKGROUND HEADER ===============*/
 
 const scrollHeader = () => {
   const header = document.getElementById("header");
   // When the scroll is greater than 50 viewport height, add the scroll-header class to the header tag
-  this.scrollY >= 50
-    ? header.classList.add("scroll-header")
-    : header.classList.remove("scroll-header");
-};
-
+  this.scrollY >= 50  ? header.classList.add('bg-header')
+                      : header.classList.remove('bg-header')
+}
+window.addEventListener("scroll", scrollHeader)
 /*=============== SCROLL SECTIONS ACTIVE LINK ===============*/
 
 /*=============== SHOW SCROLL UP ===============*/
@@ -54,9 +53,8 @@ const calculateForm = document.getElementById('calculate-form'),
   calculateKg = document.getElementById('calculate-kg'),
   calculateMessage = document.getElementById('calculate-message')
 
-const calculateBmi = (e) => {
+const calculateBmi = (e) =>{
   e.preventDefault()
-
   //check if the fields have a value
   if(calculateCm.value === '' || calculateKg.value === '') {
     //Add and remove color
@@ -67,12 +65,12 @@ const calculateBmi = (e) => {
     // Remove message three seconds
     setTimeout(() =>{
       calculateMessage.textContent = ''
-  }, 3000)
+    }, 3000)
   } else {
     // BMI Formula
     const cm = calculateCm.value / 100,
           kg = calculateKg. value,
-          bmi = Math.round (kg / (cm * cm))
+          bmi = Math.round(kg / (cm * cm))
     // Show your health status
     if(bmi < 18.5){
       // Add color and display message
@@ -91,7 +89,7 @@ const calculateBmi = (e) => {
   // Remove message four seconds
   setTimeout(() =>{
     calculateMessage.textContent = ''
-}, 4000)
+    }, 4000)
   }
 }
 calculateForm.addEventListener('submit', calculateBmi)
