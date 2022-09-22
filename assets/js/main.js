@@ -129,7 +129,7 @@ const sendEmail = (e) =>{
                }, 3000)
            }, (error) =>{
             // mail sending error
-            alert('OOPS! SOMETHING HAS FAILED...', error) 
+            alert('OOPS! SOMETHING HAS FAILED....', error) 
            })
         // to clear the input field
         contactUser.value = ''   
