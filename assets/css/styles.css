@@ -352,7 +352,15 @@ img {
   transform: translateX(0.25rem);
 }
 /*=============== LOGOS ===============*/
+.logos__container {
+  grid-template-columns: repeat(1, 2fr);
+  gap: 2rem;
+  justify-items: center;
+}
 
+.logos__img {
+  width: 120px;
+}
 /*=============== PROGRAM ===============*/
 
 /*=============== CHOOSE ===============*/
