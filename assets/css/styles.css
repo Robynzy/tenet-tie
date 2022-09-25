@@ -812,7 +812,6 @@ img {
 .show-scroll {
   bottom: 3rem;
 }
-/*=============== BREAKPOINTS ===============*/
 /* For small devices */
 @media screen and (max-width: 340px) {
   .container {
@@ -1047,18 +1046,18 @@ img {
     width: 418px;
     margin-bottom: 3.5rem;
   }
-  .pricing__container{
+  .pricing__container {
     padding-top: 3rem;
     grid-template-columns: repeat(3, 320px);
   }
-  .pricing__card{
-    padding:2rem 3.5rem;
+  .pricing__card {
+    padding: 2rem 3.5rem;
     row-gap: 2.5rem;
   }
-  .calculate__description{
+  .calculate__description {
     width: 415px;
   }
-  .calculate__form{
+  .calculate__form {
     width: 505px;
   }
   .calculate__img {
