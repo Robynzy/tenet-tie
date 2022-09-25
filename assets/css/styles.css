@@ -851,7 +851,7 @@ img {
   }
   .home__container,
   .choose__container {
-    grid_template-columns: repeat(2, 1ft);
+    grid-template-columns: repeat(2, 1ft);
     align-items: center;
   }
   .home__data,
