@@ -902,7 +902,7 @@ img {
 }
 /* For large devices */
 @media screen and (min-width: 1023px) {
-  .nav{
+  .nav {
     height: calc(var(--header-height) + 2rem);
   }
   .nav__menu {
