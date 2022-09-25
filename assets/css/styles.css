@@ -948,7 +948,7 @@ img {
     width: 545px;
   }
   .logos {
-    padding: 3.5rem 0 1rem;
+    /* padding: 3.5rem 0 1rem; */
   }
   .logos__img {
     width: 190px;
@@ -1040,7 +1040,8 @@ img {
     position: relative;
   }
   .choose__data {
-    grid-template-columns: repeat((2, max-content));
+    grid-template-columns: repeat(2, max-content);
+    gap: 2.5rem 8rem;
   }
   .choose__description {
     width: 418px;
