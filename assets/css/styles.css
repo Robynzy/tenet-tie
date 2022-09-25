@@ -741,7 +741,7 @@ img {
 }
 
 .footer__link:hover {
-  background-color: darkorange;
+  color: var(--first-color);
 }
 
 .footer__group {
@@ -761,20 +761,20 @@ img {
   border-radius: 50%;
   font-size: 1.25rem;
   color: var(--title-color-black);
-  transition: background 0.4s;
+  transition: background-color 0.4s;
 }
 
 .footer__social-link:hover {
-  background-color: brown;
+  background-color: var(--first-color-dark);
 }
 .footer__copy {
   font-size: var(--smaller-font-size);
-  color: var(text-color-light);
+  color: var(--text-color-light);
 }
 
 .footer__message {
   position: absolute;
-  transition: translateY(1rem);
+  transform: translateY(1rem);
 }
 
 /*=============== SCROLL BAR ===============*/
